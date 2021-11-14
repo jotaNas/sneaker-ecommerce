@@ -11,15 +11,51 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  justify-content: center;
+  button {
+    background-color: var(--white);
+    color: #0f0e17;
+    border: 4px solid #0f0e17;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    padding: 0px 30px;
+    cursor: pointer;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--white);
+      background: #ff8906;
+    }
+  }
 }
 
 .hero {
-  margin-left: 20px;
-  color: aqua;
+  margin-left: 40px;
+  //color: aqua;
+  h1,
+  h2 {
+    background-image: linear-gradient(aqua, rgb(0, 161, 161));
+    /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* a cor do texto deve estar como transparent */
+    color: transparent;
+  }
 }
 
 .footer {
-  background: var(--orange-drk);
+  height: 100vh;
+  max-height: 300px;
+  bottom: 0;
+  background: #0f0e17;
   li {
     color: var(--white);
   }

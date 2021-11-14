@@ -8,12 +8,12 @@ export default function Home() {
         <title>Sneaker</title>
       </Head>
       <main className={styles.contentContainer}>
-        <button>Shop now</button>
+        <button type="button">Shop now</button>
         <section className={styles.hero}>
           <h1>Try Sneackers, </h1>
           <h2>
             {" "}
-            the best shoes <br /> in the world
+            the best shoes <br /> in the world.
           </h2>
         </section>
       </main>
